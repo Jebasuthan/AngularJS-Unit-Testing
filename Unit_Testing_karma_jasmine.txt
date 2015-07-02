@@ -1,0 +1,30 @@
+1. npm init (package.json will create)
+2. Configure the package.json
+3. npm install karma --save-dev
+4. npm install karma-cli -g
+5. npm install karma-jasmine --save-dev
+6. karma init
+7. We have to configure the karma.conf.js
+8. karma start karma.conf.js
+8. npm i karma-jasmine-html-reporter --save-dev(for reporter in browser)
+9. We have to update the reporters as (reporters: ['html'])
+10. npm i karma-coverage --save-dev (for codecoverage)
+11. We have to update the coverage settings in karma.conf.js
+12. preprocessors: {
+	// have to add the code coverage files
+    },
+    
+
+Example:
+    preprocessors: {
+        'controller/*.js' : ['coverage']
+    },
+
+and we have to update reporters: ['html'] as --->
+   
+    reporters: ['html', 'coverage'],
+
+13. Code coverage will create only on PhantomJS mode. So we have to set as
+	browsers: ['PhantomJS'],
+
+14. karma start karma.conf.js
