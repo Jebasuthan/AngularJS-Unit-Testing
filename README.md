@@ -40,8 +40,6 @@ For our tutorial we’ll leave ‘jasmine’ as the default framework, let it au
   
   This will start any browsers you listed in the config file on your computer. Each browser will be connected to the Karma instance with it’s own socket and you will see a list of active browsers that will tell you whether or not it is running tests. I wish that Karma would tell you a summary of the last result of your tests for each browser (15 out of 16 passed, 1 failed) but alas for that information you need to look at the terminal window.
 
-An awesome thing about Karma is that you can test on any device connected to your network. Try pointing your phone’s browser to Karma by looking at teh URL of one of the browser windows running the tests. It should look something like this: http://localhost:9876/?id=5359192. Point your phone, VM, or any other device with a browser to [your network IP address]:9876/?id=5359192. Because Karma is running an instance of node.js, your test machine is acting like a server and will send the tests to any browser that is pointed to it.
-
 #Make Basic Test
 
 We are assuming that you already have a file to test. We’ll say that your mainController.js file looks something like this:
