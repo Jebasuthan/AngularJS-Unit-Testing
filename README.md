@@ -37,6 +37,8 @@ For our tutorial we’ll leave ‘jasmine’ as the default framework, let it au
   Now you are ready to start Karma. Again from the terminal type:
   
     karma start karma.config.js
+    
+![unittesting](https://cloud.githubusercontent.com/assets/3702438/8502047/371f425e-21c9-11e5-907f-f1fb15f93852.PNG)
   
   This will start any browsers you listed in the config file on your computer. Each browser will be connected to the Karma instance with it’s own socket and you will see a list of active browsers that will tell you whether or not it is running tests. I wish that Karma would tell you a summary of the last result of your tests for each browser (15 out of 16 passed, 1 failed) but alas for that information you need to look at the terminal window.
 
@@ -114,7 +116,6 @@ For configuration details see [docs/configuration] (https://github.com/karma-run
     
 The tests are executed using [PhantomJS](http://phantomjs.org). It is easy to add [other browsers](http://karma-runner.github.io/0.10/config/browsers.html) as well
   
-  
-
+  ![codecoverage](https://cloud.githubusercontent.com/assets/3702438/8502048/372d42fa-21c9-11e5-8e95-b0268aef3042.PNG)
 
 
