@@ -8,7 +8,12 @@ AngularJS is the best thing to happen to JavaScript since jQuery. It’s what Ja
 
 If you don’t have node.js installed, download and install it. After you have it installed go to your terminal or command line and type:
 
-    npm install -g karma
+    npm install karma --save-dev
+    npm install karma-cli -g
+    npm install karma-jasmine --save-dev
+    npm i karma-jasmine-html-reporter --save-dev
+    npm i karma-coverage --save-dev 
+    karma init
 
 #Configure Karma
 
